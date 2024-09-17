@@ -1,5 +1,11 @@
+import Hero from "../hero/Hero.jsx";
+
 function Main() {
-  return <main></main>;
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 }
 
 export default Main;

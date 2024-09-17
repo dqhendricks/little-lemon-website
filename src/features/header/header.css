@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  width: auto;
+  height: 3.5em;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+nav a.active {
+  font-weight: 500;
+}
+
+nav a:not(.active):hover {
+  text-decoration: underline;
+}
