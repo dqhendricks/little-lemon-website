@@ -1,0 +1,18 @@
+.card {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background-color: white;
+}
+
+.card header {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card header img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 50%;
+}

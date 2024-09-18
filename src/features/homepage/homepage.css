@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.hero h3 {
+  margin-top: -1rem;
+}
+
 .hero .content {
   display: flex;
   flex-direction: column;
@@ -11,7 +15,7 @@
 .hero p {
   max-width: 18rem;
   margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .hero img {
@@ -29,11 +33,15 @@
   }
 }
 
-.specials .header {
+.specials {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.specials header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 4rem;
 }
 
 .specials .items {
@@ -43,5 +51,25 @@
 }
 
 .specials .items > * {
+  flex: 1;
+}
+
+.testimonials {
+  background-color: #333333;
+  padding: 3rem 0;
+}
+
+.testimonials header h3 {
+  text-align: center;
+  color: white;
+}
+
+.testimonials .items {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.testimonials .items > * {
   flex: 1;
 }

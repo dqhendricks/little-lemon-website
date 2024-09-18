@@ -1,5 +1,6 @@
 .card {
-  border-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
   background-color: #edefee;
   overflow: hidden;
 }
@@ -17,7 +18,7 @@
   padding: 1.5rem 1rem;
 }
 
-.card .header {
+.card header {
   display: flex;
   justify-content: space-between;
 }
@@ -28,6 +29,10 @@
   letter-spacing: 0.05rem;
 }
 
-.card .header p {
+.card header p {
   color: #ee9972;
+}
+
+.card a:hover {
+  text-decoration: underline;
 }

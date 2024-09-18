@@ -1,10 +1,10 @@
-header {
+#root > header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header .logo {
+#root > header .logo {
   width: auto;
   height: 3.5em;
 }
@@ -15,6 +15,7 @@ nav ul {
   list-style: none;
   font-weight: 600;
   font-size: 1.25rem;
+  color: #333333;
 }
 
 nav a.active {
