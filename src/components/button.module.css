@@ -12,13 +12,16 @@
 .button.primary {
   color: black;
   background-color: #f4ce14;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 300ms ease, color 300ms ease,
+    transform 300ms ease;
 }
 
 .button.primary:hover {
   background-color: hsl(50, 91%, 67%);
+  transform: scale(1.05);
 }
 
 .button.primary:active {
   background-color: hsl(50, 91%, 82%);
+  transform: scale(1);
 }

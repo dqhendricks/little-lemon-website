@@ -1,8 +1,14 @@
 .card {
+  display: block;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
   background-color: #edefee;
   overflow: hidden;
+  transition: transform 300ms ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card img {
@@ -31,8 +37,4 @@
 
 .card header p {
   color: #ee9972;
-}
-
-.card a:hover {
-  text-decoration: underline;
 }

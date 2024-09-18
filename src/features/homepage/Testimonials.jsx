@@ -1,8 +1,8 @@
 import TestimonialsCard from "../../components/TestimonialsCard.jsx";
 import image1 from "../../assets/testimonial1.jpg";
-import image2 from "../../assets/testimonial2.webp";
+import image2 from "../../assets/testimonial2.jpg";
 import image3 from "../../assets/testimonial3.jpg";
-import image4 from "../../assets/testimonial4.webp";
+import image4 from "../../assets/testimonial4.jpg";
 
 function Testimonials() {
   return (

@@ -28,6 +28,10 @@
   transform: scale(1.1);
 }
 
+#root > header nav a:not(.active):active {
+  transform: scale(1);
+}
+
 #root > header nav a.active {
   font-weight: 500;
 }

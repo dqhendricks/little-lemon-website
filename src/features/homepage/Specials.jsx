@@ -9,7 +9,7 @@ function Specials() {
       <div className="specials">
         <header>
           <h2>This weeks specials!</h2>
-          <Button className="">Order Online</Button>
+          <Button className="">Online Menu</Button>
         </header>
         <div className="items">
           <SpecialsCard
