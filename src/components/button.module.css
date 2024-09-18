@@ -1,0 +1,24 @@
+.button {
+  all: unset;
+  cursor: pointer;
+  font-size: 1.125rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+}
+
+.button.primary {
+  color: black;
+  background-color: #f4ce14;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button.primary:hover {
+  background-color: hsl(50, 91%, 67%);
+}
+
+.button.primary:active {
+  background-color: hsl(50, 91%, 82%);
+}

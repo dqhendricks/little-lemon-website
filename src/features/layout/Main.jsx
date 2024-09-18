@@ -1,11 +1,5 @@
-import Hero from "../hero/Hero.jsx";
-
-function Main() {
-  return (
-    <main>
-      <Hero />
-    </main>
-  );
+function Main({ children }) {
+  return <main>{children}</main>;
 }
 
 export default Main;

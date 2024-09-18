@@ -1,0 +1,47 @@
+.hero {
+  display: flex;
+  position: relative;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero p {
+  max-width: 18rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero img {
+  position: absolute;
+  right: 1.5rem;
+  height: 20rem;
+  width: 19rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+@media (min-width: 1440px) {
+  .hero img {
+    width: 22rem;
+  }
+}
+
+.specials .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.specials .items {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.specials .items > * {
+  flex: 1;
+}
