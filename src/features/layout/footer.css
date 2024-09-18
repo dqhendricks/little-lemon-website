@@ -1,0 +1,42 @@
+#root > footer {
+  padding: 1rem 0;
+  color: white;
+}
+
+#root > footer .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+#root > footer img {
+  height: 8rem;
+  width: auto;
+  align-self: center;
+}
+
+#root > footer h4 {
+  margin-bottom: 1rem;
+}
+
+#root > footer ul {
+  list-style: none;
+  line-height: 1.5rem;
+}
+
+#root > footer a:hover {
+  text-decoration: underline;
+}
+
+#root > footer .socials {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+#root > footer .socials a {
+  display: inline-block;
+  transition: transform 300ms ease;
+}
+
+#root > footer .socials a:hover {
+  transform: scale(1.1);
+}

@@ -16,7 +16,7 @@ function Hero() {
             <Button>Reserve a Table</Button>
           </div>
         </div>
-        <img src={heroImage} />
+        <img src={heroImage} alt="Bruchetta" />
       </div>
     </section>
   );

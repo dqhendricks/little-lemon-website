@@ -24,7 +24,7 @@ function Testimonials() {
           />
           <TestimonialsCard
             imgSrc={image3}
-            name="Kate Masterson"
+            name="Kate Fox"
             saying="The food was to die for, and the dessert was the perfect sweet ending!"
           />
           <TestimonialsCard

@@ -5,10 +5,10 @@ function TestimonialsCard({ imgSrc, name, saying }) {
   return (
     <article className={styles.card}>
       <header>
-        <img src={imgSrc} />
+        <img src={imgSrc} alt={name} />
         <div>
           <h4>{name}</h4>
-          <p className="text-primary-light">
+          <p className={styles.rating}>
             <StarFillIcon />
             <StarFillIcon />
             <StarFillIcon />

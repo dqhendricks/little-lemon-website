@@ -24,7 +24,7 @@
   height: 20rem;
   width: 19rem;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
 }
 
 @media (min-width: 1440px) {
@@ -52,6 +52,7 @@
 
 .specials .items > * {
   flex: 1;
+  min-width: 0;
 }
 
 .testimonials {
@@ -72,4 +73,56 @@
 
 .testimonials .items > * {
   flex: 1;
+  min-width: 0;
+}
+
+.about {
+  padding: 3rem 0;
+}
+
+.about .row {
+  display: flex;
+  gap: 3rem;
+}
+
+.about .row > * {
+  flex: 1;
+}
+
+.about .left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about .left-panel h2 {
+  color: #333333;
+}
+
+.about .left-panel h3 {
+  margin-top: -4rem;
+}
+
+.about .right-panel {
+  position: relative;
+}
+
+.about .right-panel > img {
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.about .right-panel > :nth-child(1) {
+  bottom: 0;
+  right: 0;
+  object-position: 50% 60%;
+}
+
+.about .right-panel > :nth-child(2) {
+  top: 0;
+  left: 0;
+  object-position: 50% 35%;
 }

@@ -16,3 +16,14 @@
   object-fit: cover;
   border-radius: 50%;
 }
+
+.rating {
+  font-size: 0.6rem;
+  color: #f4ce14;
+}
+
+@media (min-width: 1024px) {
+  .rating {
+    font-size: 1rem;
+  }
+}

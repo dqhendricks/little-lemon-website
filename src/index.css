@@ -40,11 +40,11 @@ h3 {
   letter-spacing: 0.05rem;
 }
 
-.h4 {
+h4 {
   font-size: 1rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.1rem;
 }
 
 .text-lead {

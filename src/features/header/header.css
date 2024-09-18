@@ -9,19 +9,25 @@
   height: 3.5em;
 }
 
-nav ul {
+#root > header nav ul {
   display: flex;
   gap: 2rem;
   list-style: none;
+}
+
+#root > header nav a {
+  display: inline-block;
   font-weight: 600;
   font-size: 1.25rem;
   color: #333333;
+  transition: color 300ms ease, transform 300ms ease;
 }
 
-nav a.active {
+#root > header nav a:not(.active):hover {
+  color: black;
+  transform: scale(1.1);
+}
+
+#root > header nav a.active {
   font-weight: 500;
-}
-
-nav a:not(.active):hover {
-  text-decoration: underline;
 }
