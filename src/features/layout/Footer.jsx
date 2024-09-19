@@ -1,5 +1,6 @@
 import "./footer.css";
 import logo from "../../assets/logo footer.png";
+import NavList from "../../components/NavList.jsx";
 import {
   FacebookIcon,
   InstagramIcon,
@@ -11,29 +12,10 @@ function Footer() {
     <footer className="bg-primary-dark">
       <div className="row">
         <img src={logo} alt="Little Lemon logo" />
-        <nav>
+        <div>
           <h4>Navigation</h4>
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Menu</a>
-            </li>
-            <li>
-              <a href="#">Reservations</a>
-            </li>
-            <li>
-              <a href="#">Order Online</a>
-            </li>
-            <li>
-              <a href="#">Login</a>
-            </li>
-          </ul>
-        </nav>
+          <NavList />
+        </div>
         <div>
           <h4>Contact</h4>
           <ul>

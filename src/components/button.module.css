@@ -7,21 +7,46 @@
   font-weight: 600;
   text-align: center;
   display: inline-block;
+  transition: background-color 300ms ease, color 300ms ease,
+    transform 300ms ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(1);
 }
 
 .button.primary {
   color: black;
   background-color: #f4ce14;
-  transition: background-color 300ms ease, color 300ms ease,
-    transform 300ms ease;
 }
 
 .button.primary:hover {
   background-color: hsl(50, 91%, 67%);
-  transform: scale(1.05);
 }
 
 .button.primary:active {
   background-color: hsl(50, 91%, 82%);
+}
+
+.button.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  font-size: 2.5rem;
+  color: #333333;
+}
+
+.button.image:hover {
+  transform: scale(1.1);
+}
+
+.button.image:active {
   transform: scale(1);
 }

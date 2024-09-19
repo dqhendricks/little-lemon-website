@@ -9,6 +9,26 @@
   height: 3.5em;
 }
 
+.navSpread {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  .navSpread {
+    display: block;
+  }
+}
+
+.navPopup {
+  display: block;
+}
+
+@media (min-width: 760px) {
+  .navPopup {
+    display: none;
+  }
+}
+
 #root > header nav ul {
   display: flex;
   gap: 2rem;
@@ -34,4 +54,34 @@
 
 #root > header nav a.active {
   font-weight: 500;
+}
+
+.navPopup {
+  position: relative;
+}
+
+.navPopup .popup {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 50;
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 1.5rem 2.5rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.navPopup .popup.showing {
+  opacity: 1;
+}
+
+.navPopup .popup.hiding {
+  opacity: 0;
+}
+
+.navPopup ul {
+  flex-direction: column;
+  gap: 0.75rem;
 }

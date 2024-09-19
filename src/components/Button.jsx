@@ -2,14 +2,14 @@ import styles from "./button.module.css";
 
 function Button({
   children,
-  className = "",
   variant = "primary",
-  handleClick = null,
+  className = "",
+  ...attributes
 }) {
   return (
     <button
       className={`${styles.button} ${styles[variant]} ${className}`}
-      onClick={handleClick}
+      {...attributes}
     >
       {children}
     </button>

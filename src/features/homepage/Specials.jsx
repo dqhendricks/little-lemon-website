@@ -16,28 +16,19 @@ function Specials() {
             imgSrc={greekSaladImg}
             label="Greek salad"
             price="12.99"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat."
+            description="The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."
           />
           <SpecialsCard
             imgSrc={greekSaladImg}
-            label="Greek salad"
-            price="12.99"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat."
+            label="Bruchetta"
+            price="5.99"
+            description="Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil."
           />
           <SpecialsCard
             imgSrc={greekSaladImg}
-            label="Greek salad"
-            price="12.99"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat."
+            label="Lemon dessert"
+            price="5.00"
+            description="This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
           />
         </div>
       </div>

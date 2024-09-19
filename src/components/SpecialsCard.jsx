@@ -11,7 +11,7 @@ function SpecialsCard({ imgSrc, label, price, description }) {
             <h5>{label}</h5>
             <p className="text-lead">${price}</p>
           </header>
-          <p>{description}</p>
+          <p className={styles.description}>{description}</p>
           <p className="text-highlight">
             Order for delivery
             <span

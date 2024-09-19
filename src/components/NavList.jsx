@@ -1,4 +1,4 @@
-function Nav() {
+function NavList() {
   return (
     <nav>
       <ul>
@@ -25,4 +25,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default NavList;
