@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import styles from "./specialsCard.module.css";
 import { BicycleIcon } from "../assets/icons.jsx";
 
@@ -29,5 +30,12 @@ function SpecialsCard({ imgSrc, label, price, description }) {
     </a>
   );
 }
+
+SpecialsCard.propTypes = {
+  imgSrc: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 export default SpecialsCard;
