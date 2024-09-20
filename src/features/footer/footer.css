@@ -12,6 +12,7 @@
 }
 
 #root > footer img {
+  display: block;
   height: 8rem;
   width: auto;
   align-self: center;
