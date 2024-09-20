@@ -31,11 +31,7 @@
 
 @media (min-width: 600px) {
   .booking-page header > * {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.5rem;
   }
 }
 
@@ -50,7 +46,6 @@
 @media (min-width: 600px) {
   .booking-page header .available-times {
     flex: 1 1 200px;
-    justify-content: end;
   }
 }
 

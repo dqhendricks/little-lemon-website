@@ -36,17 +36,17 @@ function Footer() {
           <h4>Socials</h4>
           <ul className="socials">
             <li>
-              <a href="#">
+              <a href="#" title="Our Facebook page">
                 <FacebookIcon />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" title="Our Instagram page">
                 <InstagramIcon />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" title="Our Twitter page">
                 <TwitterIcon />
               </a>
             </li>

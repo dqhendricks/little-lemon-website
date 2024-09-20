@@ -1,5 +1,11 @@
 import { useLocation, Link } from "react-router-dom";
 import Button from "../../components/Button.jsx";
+import {
+  CalendarDateIcon,
+  AlarmIcon,
+  PeopleIcon,
+  Cake2Icon,
+} from "../../assets/icons.jsx";
 
 function BookingConfirmed() {
   const location = useLocation();
@@ -19,17 +25,17 @@ function BookingConfirmed() {
         <div className="container reservation-details">
           <h4>Your reservation details</h4>
           <p>
-            <em>Date:</em> {date}
+            <CalendarDateIcon /> <em>Date:</em> {date}
           </p>
           <p>
-            <em>Time:</em> {time}
+            <AlarmIcon /> <em>Time:</em> {time}
           </p>
           <p>
-            <em>Guests:</em> {guests}
+            <PeopleIcon /> <em>Guests:</em> {guests}
           </p>
           {occasion && (
             <p>
-              <em>Occasion:</em> {occasion}
+              <Cake2Icon /> <em>Occasion:</em> {occasion}
             </p>
           )}
           <Link to="/">

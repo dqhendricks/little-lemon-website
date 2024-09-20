@@ -46,16 +46,17 @@
 .card header {
   display: flex;
   justify-content: space-between;
+  font-size: 1.25rem;
 }
 
-.card h5 {
-  font-size: 1.25rem;
+.card .label {
   font-weight: 700;
   letter-spacing: 0.05rem;
 }
 
-.card header p {
-  color: #ee9972;
+.card .price {
+  font-weight: 500;
+  color: hsl(19, 78%, 40%);
 }
 
 .description {

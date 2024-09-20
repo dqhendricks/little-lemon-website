@@ -9,8 +9,8 @@ function SpecialsCard({ imgSrc, label, price, description }) {
         <img src={imgSrc} alt={label} />
         <div className={styles.body}>
           <header>
-            <h5>{label}</h5>
-            <p className="text-lead">${price}</p>
+            <p className={styles.label}>{label}</p>
+            <p className={styles.price}>${price}</p>
           </header>
           <p className={styles.description}>{description}</p>
           <p className="text-highlight">
