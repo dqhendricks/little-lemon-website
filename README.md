@@ -8,6 +8,6 @@ Live version up at [https://dustinhendricks.com/capstone](https://dustinhendrick
 Front end development aspects this project touches on:
 * UX/UI, persona's, user journeys, Figma wireframes, Figma prototypes, UI kits, style guides, hueristics and accessibility evaluations.
 * Unit tests, Integration tests, Vitest, React Testing Library, Jest Dom.
-* Responsive design, micro animations, CSS.
+* Responsive design, micro animations, CSS, open graph.
 * Form validation, Formik, Yup.
 * State, reducers, effects, routing.
