@@ -28,11 +28,12 @@ function getValidationClass(message, isTouched) {
   return message ? "isInvalid" : "isValid";
 }
 
-function BookingForm({ availableTimes, dispatch }) {
+function BookingForm({ availableTimes, dispatch, submitAPI }) {
   const navigate = useNavigate();
 
   function submitHandler(values) {
-    console.log(values);
+    const response = submitAPI(values);
+    if (response) navigate("/reservation-confirmed", { state: values });
   }
 
   const handleDateChange = (setFieldValue) => (event) => {
@@ -48,7 +49,7 @@ function BookingForm({ availableTimes, dispatch }) {
       onSubmit={submitHandler}
     >
       {({ errors, touched, setFieldValue }) => (
-        <Form aria-label="Booking options">
+        <Form className="container" aria-label="Booking options">
           <div className={getValidationClass(errors.date, touched.date)}>
             <label htmlFor="date">Choose date*</label>
             <Field
@@ -76,7 +77,7 @@ function BookingForm({ availableTimes, dispatch }) {
           </div>
           <div>
             <label htmlFor="occasion">Occasion (optional)</label>
-            <Field as="select" id="occasion">
+            <Field as="select" name="occasion" id="occasion">
               <option />
               <option>Birthday</option>
               <option>Anniversary</option>
@@ -99,6 +100,7 @@ function BookingForm({ availableTimes, dispatch }) {
 BookingForm.propTypes = {
   availableTimes: PropTypes.array,
   dispatch: PropTypes.func,
+  submitAPI: PropTypes.func,
 };
 
 export default BookingForm;
