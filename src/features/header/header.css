@@ -6,7 +6,13 @@
 
 #root > header .logo {
   width: auto;
-  height: 3.5em;
+  height: 3em;
+}
+
+@media (min-width: 760px) {
+  #root > header .logo {
+    height: 3.5em;
+  }
 }
 
 .navSpread {
@@ -54,6 +60,7 @@
 
 #root > header nav a.active {
   font-weight: 500;
+  cursor: default;
 }
 
 .navPopup {

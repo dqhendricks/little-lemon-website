@@ -1,9 +1,11 @@
+import { NavLink } from "react-router-dom";
+
 function NavList() {
   return (
     <nav>
       <ul>
         <li>
-          <a className="active">Home</a>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
           <a href="#">About</a>
@@ -12,7 +14,7 @@ function NavList() {
           <a href="#">Menu</a>
         </li>
         <li>
-          <a href="#">Reservations</a>
+          <NavLink to="/reservations">Reservations</NavLink>
         </li>
         <li>
           <a href="#">Order Online</a>

@@ -18,7 +18,7 @@ function Button({
 }
 
 Button.propTypes = {
-  children: PropTypes.children,
+  children: PropTypes.node,
   variant: PropTypes.string,
   className: PropTypes.string,
 };

@@ -158,16 +158,25 @@
   height: 65%;
   object-fit: cover;
   border-radius: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.75s ease, transform 0.75s ease;
 }
 
 .about .right-panel > :nth-child(1) {
   bottom: 0;
   right: 0;
   object-position: 50% 60%;
+  transform: translateX(75px);
 }
 
 .about .right-panel > :nth-child(2) {
   top: 0;
   left: 0;
   object-position: 50% 35%;
+  transform: translateX(-75px);
+}
+
+.about.isInView .right-panel > img {
+  opacity: 1;
+  transform: translateX(0);
 }

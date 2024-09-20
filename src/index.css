@@ -26,7 +26,7 @@ a {
 /* TEXT */
 
 h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 4rem;
   font-family: "Markazi Text", serif;
   font-weight: 500;
@@ -34,10 +34,21 @@ h2 {
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-family: "Markazi Text", serif;
   font-weight: 400;
   letter-spacing: 0.05rem;
+}
+
+@media (min-width: 600px) {
+  h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
 }
 
 h4 {

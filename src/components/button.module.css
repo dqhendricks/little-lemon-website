@@ -6,6 +6,7 @@
   border-radius: 0.75rem;
   font-weight: 600;
   text-align: center;
+  letter-spacing: 0.05rem;
   display: inline-block;
   transition: background-color 300ms ease, color 300ms ease,
     transform 300ms ease;
@@ -29,18 +30,44 @@
 }
 
 .button.primary:active {
-  background-color: hsl(50, 91%, 82%);
+  background-color: #f4ce14;
+}
+
+.button.secondary {
+  color: white;
+  background-color: #495e57;
+}
+
+.button.secondary:hover {
+  background-color: hsl(160, 13%, 48%);
+}
+
+.button.secondary:active {
+  background-color: #495e57;
+}
+
+.button.light {
+  color: #333333;
+  background-color: #edefee;
+}
+
+.button.light:hover {
+  background-color: hsl(150, 6%, 78%);
+}
+
+.button.light:active {
+  background-color: #edefee;
 }
 
 .button.image {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
-  height: 3rem;
   padding: 0;
-  font-size: 2.5rem;
   color: #333333;
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 2.25rem;
 }
 
 .button.image:hover {

@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import styles from "./testimonialsCard.module.css";
 import { StarFillIcon } from "../assets/icons.jsx";
 
-function TestimonialsCard({ imgSrc, name, saying }) {
+function TestimonialsCard({ imgSrc, name, comment }) {
   return (
     <article className={styles.card}>
       <header>
@@ -18,7 +18,7 @@ function TestimonialsCard({ imgSrc, name, saying }) {
           </p>
         </div>
       </header>
-      <p>{saying}</p>
+      <p>{comment}</p>
     </article>
   );
 }
@@ -26,7 +26,7 @@ function TestimonialsCard({ imgSrc, name, saying }) {
 TestimonialsCard.propTypes = {
   imgSrc: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  saying: PropTypes.string.isRequired,
+  comment: PropTypes.string.isRequired,
 };
 
 export default TestimonialsCard;

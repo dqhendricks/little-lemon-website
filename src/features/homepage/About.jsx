@@ -1,9 +1,29 @@
+import { useEffect, useState } from "react";
 import image1 from "../../assets/Mario and Adrian A.jpg";
 import image2 from "../../assets/Mario and Adrian b.jpg";
 
 function About() {
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const section = document.querySelector(".about");
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.75)
+          setIsInView(true);
+        if (!entry.isIntersecting && entry.intersectionRatio <= 0.25)
+          setIsInView(false);
+      },
+      { threshold: [0.25, 0.75] }
+    );
+
+    observer.observe(section);
+    return () => observer.unobserve(section);
+  }, []);
+
   return (
-    <section className="about">
+    <section className={`about ${isInView ? "isInView" : ""}`}>
       <div className="row">
         <div className="left-panel">
           <h2>Little Lemon</h2>
