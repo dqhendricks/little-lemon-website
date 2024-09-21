@@ -4,9 +4,12 @@ import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import Button from "../../components/Button.jsx";
 
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
 const bookingSchema = Yup.object().shape({
   date: Yup.date()
-    .min(new Date(), "The date must be today or later")
+    .min(today, "The date must be today or later")
     .required("Date required"),
   time: Yup.string().required("Time required"),
   guests: Yup.number()
